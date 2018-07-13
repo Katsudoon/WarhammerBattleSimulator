@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Warhammer battle Simulator</string>
+    <string name="titre_principale">Battle Simulator</string>
+    <string name="bienvenue">Bienvenue</string>
+    <string name="catchphrase">Dans les tenebres d\'un lointain futur, il n\'y a que la guerre…</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="password">Mot de passe (8 caractères minimum)</string>
+    <string name="nom">Nom</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="combat">Combat</string>
+    <string name="statistiques">Statistiques</string>
+    <string name="event">Event</string>
+    <string name="choix_du_combat">Choix du combat</string>
+    <string name="Recherche">Recherche</string>
+    <string name="combat_choisi">Combat choisi</string>
+    <string name="choix_de_la_premiere_unite">Choix de la premiere unitée</string>
+    <string name="valider">Valider</string>
+    <string name="choix_de_la_seconde_unite">Choix de la seconde unitée</string>
+    <string name="suivant">Suivant</string>
+    <string name="resultat">Resultat</string>
+    <string name="carte_des_events">Carte des events</string>
+    <string name="option">Option</string>
+    <string name="volume">Volume</string>
+    <string name="test">test</string>
+    <string name="deconnexion">Deconnexion</string>
+    <string name="eventTrouve">Vous avez gagner 1 Token !</string>
+    <string name="pasEvent">Vous etes trop loin d\'un event...</string>
+    <string name="check_event">Check event</string>
+    <string name="versus">Versus</string>
+</resources>

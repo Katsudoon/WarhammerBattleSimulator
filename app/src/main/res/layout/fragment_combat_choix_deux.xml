@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".fragment.CombatChoixDeuxFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/sousTitre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choix_de_la_seconde_unite"
+                android:textColor="#ffffff" />
+
+            <Spinner
+                android:id="@+id/SP_choix2_faction2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#ffffff" />
+
+            <Spinner
+                android:id="@+id/SP_choix2_unite2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#ffffff" />
+
+            <Button
+                android:id="@+id/BTN_choix2_valider"
+                style="@style/bouton"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="@string/valider" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

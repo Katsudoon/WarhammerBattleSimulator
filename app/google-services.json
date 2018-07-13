@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "915367909225",
+    "firebase_url": "https://warhammer-1530705346730.firebaseio.com",
+    "project_id": "warhammer-1530705346730",
+    "storage_bucket": "warhammer-1530705346730.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915367909225:android:70d3c88b81ef004c",
+        "android_client_info": {
+          "package_name": "a2018.warhammer.alex.warhammerbattlesimulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915367909225-dghokr4v0t05tltm5iu5mticqa8n5903.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a2018.warhammer.alex.warhammerbattlesimulator",
+            "certificate_hash": "2a7421b60fd9dd6b26bf6d6c2b837ab04ccccc27"
+          }
+        },
+        {
+          "client_id": "915367909225-20ia08e10o4boinloepq6bvn06o2mo80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMRFeTB6oXMn3F-rS7lyX7GGDd_GFuB80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915367909225-20ia08e10o4boinloepq6bvn06o2mo80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

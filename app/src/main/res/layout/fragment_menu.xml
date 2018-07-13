@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/TV_menu_soustitre"
+                style="@style/sousTitre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bienvenue" />
+
+            <Button
+                android:id="@+id/BTN_menu_combat"
+                style="@style/bouton"
+                android:layout_marginTop="70dp"
+                android:text="@string/combat" />
+
+            <Button
+                android:id="@+id/BTN_menu_statistiques"
+                style="@style/bouton"
+                android:layout_marginTop="30dp"
+                android:text="@string/statistiques" />
+
+            <Button
+                android:id="@+id/BTN_menu_event"
+                style="@style/bouton"
+                android:layout_marginTop="30dp"
+                android:text="@string/event" />
+
+            <TextView
+                style="@style/catchphrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
