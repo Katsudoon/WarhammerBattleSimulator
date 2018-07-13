@@ -14,21 +14,30 @@
             style="@style/sousTitre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/combat_choisi"/>
+            android:text="@string/combat_choisi" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="50dp">
 
             <TextView
                 android:id="@+id/TV_statCombat_statCombat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/vainqueur"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
 
-
-                />
-
+            <TextView
+                android:id="@+id/TV_statCombat_vainqueur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_marginTop="50dp"/>
 
         </ScrollView>
 

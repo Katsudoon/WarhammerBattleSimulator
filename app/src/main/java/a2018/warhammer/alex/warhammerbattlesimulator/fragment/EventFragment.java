@@ -35,7 +35,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -158,12 +157,14 @@ public class EventFragment extends Fragment implements LocalisationGpsTool.ILoca
         googleApiClient.connect();
 
         LocationRequest locationRequest = LocationRequest.create();
-        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
         locationRequest.setInterval(10000);
+
 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
         builder.setAlwaysShow(true);
 
+        //TODO Switch to new feature => https://developers.google.com/android/reference/com/google/android/gms/location/SettingsClient
         PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(googleApiClient, builder.build());
         result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
             @Override
@@ -257,6 +258,8 @@ public class EventFragment extends Fragment implements LocalisationGpsTool.ILoca
                                     }
                                 }
 
+                                //TODO Check event checker, puis set dans DB.
+
                                 @Override
                                 public void onCancelled(DatabaseError error) {
                                 }
@@ -268,8 +271,6 @@ public class EventFragment extends Fragment implements LocalisationGpsTool.ILoca
                         Toast.makeText(context, R.string.eventTrouve, Toast.LENGTH_LONG).show();
                         trouver = true;
                         break;
-
-                    } else {
 
                     }
                     if (!trouver) {

@@ -32,4 +32,5 @@
     <string name="pasEvent">Vous etes trop loin d\'un event...</string>
     <string name="check_event">Check event</string>
     <string name="versus">Versus</string>
+    <string name="vainqueur">vainqueur :</string>
 </resources>

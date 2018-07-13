@@ -13,6 +13,7 @@ import a2018.warhammer.alex.warhammerbattlesimulator.fragment.CombatChoixDeuxFra
 import a2018.warhammer.alex.warhammerbattlesimulator.fragment.CombatChoixUnFragment;
 import a2018.warhammer.alex.warhammerbattlesimulator.fragment.CombatFragment;
 import a2018.warhammer.alex.warhammerbattlesimulator.fragment.EventFragment;
+import a2018.warhammer.alex.warhammerbattlesimulator.fragment.StatistiqueCombatFragment;
 import a2018.warhammer.alex.warhammerbattlesimulator.services.MusiqueIntentService;
 
 public class MainActivity extends Activity {
@@ -78,6 +79,22 @@ public class MainActivity extends Activity {
         data.putString("unite2", choixUnite2);
         data.putString("faction1", choixFaction1);
         data.putString("unite1", choixUnite1);
+        fragment.setArguments(data);
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.FL_accueil, fragment)
+                .addToBackStack(null)
+                .commit();
+
+    }
+
+    public void sendDataStats(String choixUnite1, String choixUnite2, String vainqueur) {
+
+        Fragment fragment = new StatistiqueCombatFragment();
+        Bundle data = new Bundle();
+        data.putString("unite2", choixUnite2);
+        data.putString("unite1", choixUnite1);
+        data.putString("vainqueur",vainqueur );
         fragment.setArguments(data);
         getFragmentManager()
                 .beginTransaction()
